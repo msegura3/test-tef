@@ -1,6 +1,6 @@
 
 provider "google" {
-} 
+}  
 
 resource "google_compute_instance" "default" {
   name         = "test"
