@@ -1,0 +1,13 @@
+name: Deployment
+on:
+  push:
+    branches:
+      - master
+jobs:
+  deployment:
+    runs-on: ubuntu-latest
+    environment: 
+      name: ok
+      url: https://github.com
+    steps:
+      - run: echo 1
