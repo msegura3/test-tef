@@ -6,6 +6,17 @@ on:
 jobs:
   deployment:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        env: ["development", "staging", "production"]
+        include:
+          - env: "development"
+            account_id: "prod"
+          - env: "staging"
+            account_id: "stag"
+          - env: "production"
+            account_id: "prod"
+
     environment: ok
     steps:
-      - run: echo 1
+      - run: echo ${{ matrix.env }}
