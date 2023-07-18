@@ -17,6 +17,6 @@ jobs:
           - env: "production"
             account_id: "prod"
 
-    environment: ok
+    environment: ${{ matrix.env }}
     steps:
       - run: echo ${{ matrix.env }}
