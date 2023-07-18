@@ -6,7 +6,7 @@ on:
 jobs:
   deployment:
     runs-on: ubuntu-latest
-    environment: 
+    environment: ok
       name: ok
       url: https://github.com
     steps:
