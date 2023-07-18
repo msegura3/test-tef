@@ -7,7 +7,5 @@ jobs:
   deployment:
     runs-on: ubuntu-latest
     environment: ok
-      name: ok
-      url: https://github.com
     steps:
       - run: echo 1
